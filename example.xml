@@ -1,0 +1,18 @@
+<changeSet id="YYYY-MM-DD" author="yip">
+    <createTable tableName="X" schemaName="X" tablesapce="X">
+        <column name="X" type="X">
+            <constraints nullable="false"/>
+        </column>
+        <cloumn="X" type="X">
+            <constraints nullable="false"/>
+        </column>
+        <column name="X" type="X">
+            <constraints nullable="false"/>
+        </column>
+        <constraints primaryKey="true" primaryKey="X">
+            <primaryKeyColumn name="X"/>
+            <primaryKeyColumn name="X"/>
+            <primaryKeyColumn name="X"/>
+        </constraints>
+    </createTable>
+</changeSet>
