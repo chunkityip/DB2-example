@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- ChangeSet to create the STORE table -->
+    <!-- Column will be: STORE_ID as INTEGER (PK) , STORE_NAME as CHAR(20), ITEM_ID as SMALLEST , ITEM_RECV_DATE as DATE -->
+    <changeSet="12/12/2024" author="ck">
+        <changeTable tableName="STORE">
+            <column="STORE_ID" type="INTEGER">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column="STORE_NAME" type="CHAR(20)"/>
+            <column="ITEM_ID" type="SMALLEST"/>
+            <column="ITEM_RECV_DATE" type="DATE"/>
+        </changeTable>
+    </changeSet>
+
+    <!-- ChangeSet to create the ITEM table -->
+    <!-- Column will be: ITEM_ID as SMALLEST (PK) , ITEM_NAME as CHAR(20), ITEM_PRICE as DECIMAL(10,2) , ITEM_QNTY as SMALLEST -->
+    <changeSet="12/23/2024" author="ck">
+        <changeTable tableName="ITEM">
+            <column="ITEM_ID" type="SMALLEST">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column="ITEM_NAME" type="CHAR(20)">
+            <column="ITEM_PRICE" type="DECIMAL(10,2)">
+            <column="ITEM_QNTY" type="SMALLEST">
+        </changeTable>
+    </changeSet>
+
